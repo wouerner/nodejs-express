@@ -6,12 +6,15 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "start-dev": "./node_modules/nodemon/bin/nodemon.js ."
+    "start-dev": "./node_modules/nodemon/bin/nodemon.js .",
+    "test": "./node_modules/jest/bin/jest.js ."
   },
   "dependencies": {
     "express": "^4.16.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "jest": "^27.3.1",
+    "nodemon": "^1.19.4",
+    "supertest": "^6.1.6"
   }
 }
