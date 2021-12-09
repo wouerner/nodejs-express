@@ -1,5 +1,8 @@
-exports.index = (req, res)=> {
-    const books = [{"name" : "book 1"}, {"name" : "book 2"}];
+const BookModel = require('../models/Book');
+
+exports.index = async (req, res)=> {
+    let books = await BookModel.find({});
+
     res.json(books);
 };
 
